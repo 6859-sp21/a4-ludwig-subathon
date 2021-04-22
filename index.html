@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <link rel="shortcut icon" href="#">
+	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<script src="https://d3js.org/d3.v4.js"></script>
+		<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	</head>
+	<body>
+		<!-- Title -->
+		<h2 style="text-align:center">Visualizing Ludwig's 31-Day Subathon</h2>
+
+		<!-- Viz / Infographics -->
+		<div class="row" >
+			<!-- Left Side -->
+			<div class="column"> 
+				<button id="reset-button" style="display:inline-block;">Reset Zoom</button>
+				<form style="display:inline-block;"> 
+					<label><input type="radio" name="mode" value="byActivity" checked> By Activity</label>
+					<label><input type="radio" name="mode" value="byLudwigModcast"> By Ludwig/Modcast</label>
+					<label><input type="radio" name="mode" value="byTime"> By Time</label>
+					<label><input type="radio" name="mode" value="byHighlights"> By Events</label>
+					<label><input type="radio" name="mode" value="byNone"> None</label>
+				</form>
+				<div id='help-tooltip' style='display:inline-block;margin-left:6px;font-size:13px;'>
+		          <abbr>[?] <!--<i class='fa fa-question-circle'></i>-->
+		            <span>
+		              <b>User Types</b>
+		              <br>
+		              <u>Streamer</u>: A user live broadcasting on Twitch. 
+		              <br>
+		              <u>Viewer</u>: A user watching a live stream. 
+		              <br>
+		              <u>Follower</u>: A user that has pressed the "Follow" button on a channel (free). 
+		              <br>
+		              <u>Subscriber</u>: A user that has purchased a channel subscription (requires $$$).
+		              <br><br>
+		              <b>Subathon Timer</b>
+		              <br>
+		              Amount of time left in stream (hours:minutes:seconds). Each new subscriber adds 10 seconds to the subathon timer.
+		              <br><br>
+		              <b>By Activity</b>
+		              <br>
+		              Game category on Twitch during the stream.
+		              <br><br>
+		              <b>By Ludwig/Modcast</b>
+		              <br>
+		              "Modcast" occurs when Ludwig is asleep, Slime takes over when Ludwig is "Away", and all other times is when "Ludwig" is awake and in control of the stream.
+		              <br><br>
+		              <b>By Time</b>
+		              <br>
+		              Colors the graph according to the time of day. All times are calculated in EST.
+		              <br><br>
+		              <b>By Events</b>
+		              <br>
+		              Interesting mini-clips of events that occurred during the stream. Events can help explain subscription spikes or other phenomeons that happened during this time.
+		            </span>
+		          </abbr>
+		        </div>
+				<div id="line-viz" style="padding-top:15px"></div>
+			</div>
+			<!-- Right Side -->
+			<div class="column"> 
+				<div id="info-viz"></div>
+				<div id="treemap-viz"></div>
+				<div id="piechart-viz"></div>
+				<div id="events-viz"></div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script type="module"  src="scripts/index.js"></script>
+	</body>
+</html>

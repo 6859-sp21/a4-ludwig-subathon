@@ -1,0 +1,25 @@
+{
+  "name": "a4-ludwig-subathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6859-sp21/a4-ludwig-subathon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/6859-sp21/a4-ludwig-subathon/issues"
+  },
+  "homepage": "https://github.com/6859-sp21/a4-ludwig-subathon#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "puppeteer": "^8.0.0"
+  }
+}

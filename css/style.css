@@ -1,0 +1,87 @@
+/* General Layout */
+
+body {
+  font: 12px sans-serif;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  width:1300px;
+  margin:auto;
+}
+
+.column {
+  flex: 50%;
+}
+
+.info_block{
+  font-size: 14px;
+}
+
+.events_block{
+  font-size: 14px;
+}
+
+/* Vertical Hover Line */
+
+.hover-line {
+  stroke: #6F257F;
+  stroke-width: 2px;
+  stroke-dasharray: 2,4;
+}
+
+/* Radio Button */
+
+input[type="radio"] {
+  margin-top: 1px;
+  vertical-align: top;
+}
+
+/* Question Tooltip */
+abbr {
+	margin-top: 1px;
+}
+abbr, abbr[data-title] {cursor:help;
+  text-decoration:none;
+  border-bottom:1px dotted rgba(0,0,0,0.4);
+  border-radius:8px;}
+abbr:hover {background:rgba(0,0,0,0.1);}
+abbr[data-title]:hover {
+  position:relative;
+  background:rgba(0,255,0,.2);
+  }
+abbr[data-title]:hover:after {position:absolute;
+  left:16px; top:calc(100% + .8em); z-index:20;
+  content:attr(data-title);
+  white-space:nowrap;
+  padding:2px 4px 0;
+  border:1px solid green; border-radius:6px;
+  box-shadow:2px 2px 4px rgba(0,128,0,.5);
+  background:linear-gradient(#dfd, #bfb);
+  color:#030;}
+abbr span, div.tip div {
+  position:absolute;
+  display:none;
+  z-index:10;
+  padding:2px 4px 0; margin:1.5em 0 0 8px;
+  max-width:0px;
+  border:1px solid green;
+  border-radius:6px;
+  box-shadow:2px 2px 4px rgba(0,128,0,.5);
+  background:linear-gradient(#dfd, #bfb);
+  visibility:hidden; opacity:0;
+  -webkit-transition:
+    visibility 2s linear,
+    opacity 2s linear;
+  transition:
+    visibility 2s linear,
+    opacity 2s linear;
+  }
+abbr:hover span, div.tip:hover div {
+  display:inline-block;
+  max-width:200px;
+  visibility:visible; opacity:1;
+  -webkit-transition-delay:0s;
+  transition-delay:0s;
+  }

@@ -1,0 +1,4 @@
+{
+	"timeStreamed": [0, 12.5, 19, 36, 42.5, 61.5, 68, 84.5, 92, 109.5, 116.5, 134, 140.5, 157.5, 165, 179, 189, 205, 210, 222.5, 238, 253, 262.5, 277.5, 285, 301.5, 308, 311, 337.5, 348, 359, 374, 381.5, 398, 405.5, 421.5, 429.5, 445.5, 453.5, 470.5, 478, 494, 502, 517.5, 526, 541.5, 550, 555, 574.5, 590, 598, 613, 620.5, 637, 646, 661.5, 669.5, 710, 718],
+	"sleepAwake": ["awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "away", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "away", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake", "sleep", "awake"]
+}
